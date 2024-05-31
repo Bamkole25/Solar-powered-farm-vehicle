@@ -13,7 +13,7 @@ void loop() {
   // put your main code here, to run repeatedly:
  val = digitalRead(iputPin);
  if (val == HIGH){
- digitalWrite(buzzer, HIGH);
-  
+ //digitalWrite(buzzer, HIGH); // for active buzzers
+tone(buzzer, 1000, 200); // for passive buzzers 
  }
 }
