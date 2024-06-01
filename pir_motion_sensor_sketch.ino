@@ -14,7 +14,7 @@ void loop() {
  val = digitalRead(iputPin);
  if (val == HIGH){
  //digitalWrite(buzzer, HIGH); // for active buzzers
-tone(buzzer, 1000, 200); // for passive buzzers 
+tone(buzzer, 1000, 2000); // for passive buzzers 
  }
  else {
   noTone(buzzer)
