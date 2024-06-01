@@ -16,4 +16,7 @@ void loop() {
  //digitalWrite(buzzer, HIGH); // for active buzzers
 tone(buzzer, 1000, 200); // for passive buzzers 
  }
+ else {
+  noTone(buzzer)
+ }
 }
