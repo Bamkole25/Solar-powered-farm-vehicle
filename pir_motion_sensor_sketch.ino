@@ -11,12 +11,12 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
- val = digitalRead(iputPin);
+ int val = digitalRead(inputPin);
  if (val == HIGH){
  //digitalWrite(buzzer, HIGH); // for active buzzers
 tone(buzzer, 1000, 2000); // for passive buzzers 
  }
  else {
-  noTone(buzzer)
+  noTone(buzzer);
  }
 }
